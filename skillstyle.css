@@ -13,17 +13,6 @@ header {
   padding: 1em 1em 2em 1em;
   text-align: center;
   text-shadow: .05em .05em .05em gray;
-  background: url(Images/barbedwire.png) center top repeat-x;
-  background: 
-    url(Images/barbedwire.png) left top repeat-y, 
-    url(Images/barbedwire.png) right top repeat-y;
-  background-color: rgba(255,255,255,.5);
-  -webkit-mask-image: -webkit-gradient(linear, center top, center bottom, 
-			color-stop(0.50,  rgba(0,0,0,1)),
-			color-stop(1.00,  rgba(0,0,0,0)));
-  mask-image: -webkit-gradient(linear, center top, center bottom, 
-			color-stop(0.50,  rgba(0,0,0,1)),
-			color-stop(1.00,  rgba(0,0,0,0)));
   
 }
 
@@ -115,6 +104,38 @@ a:focus, a:hover {
     
 }
 
+a {
+    text-decoration: none;
+  }
+
+.Software { 
+    align-items: center;
+    margin-left: 45%;
+
+}
+
 footer {
     border-top: 1.5px solid darkorchid;
+}
+
+h3{
+    color: #7c5295;
+}
+
+span{
+     font-family: "DM Serif Display", serif;
+     color:  #3c1361;
+     border-bottom: 1px solid  #3c1361;
+     font-size: 3em; 
+}
+
+.centered-list {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }

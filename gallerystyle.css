@@ -1,16 +1,51 @@
 @charset "UTF-8";
 
+
 body{
-    background-color: #e6e6fa;
+    background-color: lavender;
     font-family: "Raleway", sans-serif;
     margin: 0 5%;
     color: #7c5295;
     font-size: 17px;
 }
 
+header {
+  margin-top: 0;
+  padding: 1em 1em 2em 1em;
+  text-align: center;
+  text-shadow: .05em .05em .05em gray;
+  
+}
+
 h2{
     color: #7c5295;
     text-shadow: .05em .05em .05em gray;
+}
+
+h3{
+    color: #7c5295;
+}
+
+span{
+     font-family: "DM Serif Display", serif;
+     color:  #3c1361;
+     border-bottom: 1px solid  #3c1361;
+     font-size: 3em; 
+}
+
+.centered-list {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    color: darkorchid;
 }
 
 a:visited {
@@ -19,32 +54,23 @@ a:visited {
 
 a:focus, a:hover {
     color: #c700f2;
+    
 }
 
-header {
-    margin-top: 0;
-    padding: 1em 1em 2em 1em;
-    text-align: center;
-    text-shadow: .05em .05em .05em gray;
-    background: url(Images/barbedwire.png) center top repeat-x;
-    background: 
-      url(Images/barbedwire.png) left top repeat-y, 
-      url(Images/barbedwire.png) right top repeat-y;
-    background-color: rgba(255,255,255,.5);
-    font-family: "DM Serif Display", serif;
-    font-size: 1.5em;
-    -webkit-mask-image: -webkit-gradient(linear, center top, center bottom, 
-			color-stop(0.50,  rgba(0,0,0,1)),
-			color-stop(1.00,  rgba(0,0,0,0)));
-  mask-image: -webkit-gradient(linear, center top, center bottom, 
-			color-stop(0.50,  rgba(0,0,0,1)),
-			color-stop(1.00,  rgba(0,0,0,0)));
-    
+a {
+    text-decoration: none;
   }
 
-  footer {
+.Software { 
+    align-items: center;
+    margin-left: 45%;
+
+}
+
+footer {
     border-top: 1.5px solid darkorchid;
 }
+
 
 .roman {
     list-style-type: upper-roman;
