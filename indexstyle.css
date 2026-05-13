@@ -84,7 +84,6 @@ footer {
     radial-gradient(50% 8% at 50% 65%, #0004 50%, #0000 0),
     linear-gradient(#0000 8%, #738 0 70%, #0000 0);
     overflow: hidden;
-    position: absolute;
     top: 50%;
     left: 2rem;
     transform: translateY(-50%);
