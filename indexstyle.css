@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+body{
+    background-color: lavender;
+    font-family: "Raleway", sans-serif;
+    margin: 0 5%;
+    color: #7c5295;
+    font-size: 17px;
+}
+
+header {
+  margin-top: 0;
+  padding: 1em 1em 2em 1em;
+  text-align: center;
+  text-shadow: .05em .05em .05em gray;
+  
+}
+
+h2{
+    color: #7c5295;
+    text-shadow: .05em .05em .05em gray;
+}
+
+h3{
+    color: #7c5295;
+}
+
+span{
+     font-family: "DM Serif Display", serif;
+     color:  #3c1361;
+     border-bottom: 1px solid  #3c1361;
+     font-size: 3em; 
+}
+
+.centered-list {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    color: darkorchid;
+}
+
+a:visited {
+    color: #b061c1;
+}
+
+a:focus, a:hover {
+    color: #c700f2;
+    
+}
+
+a {
+    text-decoration: none;
+  }
+
+.Software { 
+    align-items: center;
+    margin-left: 45%;
+
+}
+
+footer {
+    border-top: 1.5px solid darkorchid;
+}
+
+
+
+.lava {
+    font-size: 1.5vmin;
+    width: 35em;
+    aspect-ratio: 4/5;
+    background: #0003;
+    border-radius: 100% / 80%;
+    clip-path: polygon(42% 0, 58% 0, 75% 65%, 60% 75%, 70% 100%, 30% 100%, 40% 75%, 25% 65%);
+    position: fixed ;
+    background:
+    radial-gradient(50% 8% at 50% 65%, #0004 50%, #0000 0),
+    linear-gradient(#0000 8%, #738 0 70%, #0000 0);
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    transform: translateY(-50%);
+}
+
+@keyframes bubbles {
+    0% { transform: rotate(0deg); background-position: 0 0, 0 0, 0 0, 0 0; }
+    20% { background-position: -1em 6em, 0 -7em, 2em 0, 0 0; }
+    40% { background-position: -0.5em 4em, 1em -6em, 2em 3em, 0 0; }
+    60% { background-position: 1em -1em, 2em -2em, 1em 0, 0 0; }
+    80% { background-position: -1em 1em, -1em 2em, 0em 7em, 0 0; }
+    100% { transform: rotate(2deg); background-position: 2em -3em, 3em 1em, 0 0.5em, 0 0; }
+
+}
+
+.lava::before {
+    --color: #0ff;
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 100% / 80%;
+    background: 
+    radial-gradient(at 50% 50%, var(--color) 2em, #0000 0),
+    radial-gradient(at 55% 30%, var(--color) 2.5em, #0000 0),
+    radial-gradient(circle at 40% 40%, var(--color) 3em, #0000 0),
+    radial-gradient(60% 8% at 50% 68%, var(--color) 40%, #0000 41%),
+    #000;
+    filter: blur(1em) contrast(500) sepia(1) brightness(100%) hue-rotate(30deg);
+    mix-blend-mode: lighten;
+    animation: bubbles 15s infinite alternate;
+
+}
+
+.lava::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: 
+    conic-gradient(at 61% 100%, #0002 0 180deg, #0000 0 355deg, #0002 0) 50% 0% / 100% 67% no-repeat,
+    conic-gradient(at 55% 25%, #0000 30deg, #0002 0 170deg, #0000 0) 50% 100% / 100% 33% no-repeat,
+    radial-gradient(250% 100% at 50% 0, #ccc 0 10%, #0000 10.2%),
+    radial-gradient(120% 100% at 50% 0, #0000 0 68%, #ccc 68.2%);
+    border-radius: 100% / 80%;
+
+}
